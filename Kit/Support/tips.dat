@@ -1,0 +1,16 @@
+EtaComp permet d'assister un opérateur lors du contrôle d'étalonnage d'un comparateur mécanique.
+EtaComp est un logiciel développé pour fonctionner sous Microsoft Windows en mode graphique.
+EtaComp averti l'opérateur si l'ordinateur sur lequel il est exécuté n'est pas correctement configuré.
+EtaComp intégre des sécurités permettant d'orienter les actions de l'opérateur au cours d'un contrôle.
+EtaComp recentre le travail de l'opérateur sur la prise de mesures et le décharge complètement de la gestion des valeurs mesurées.
+EtaComp prend en charge le déroulement d'un contrôle tel qu'il est imposé par la procédure officielle.
+EtaComp est totalement paramétrable et peut s'adapter facilement à une nouvelle version de la procédure officielle.
+EtaComp peut fonctionner avec tous les modèles de comparateur numérique utilisant le port série d'un ordinateur.
+EtaComp prend en charge la phase des séries de mesures.
+EtaComp prend en charge la phase du relevé des écarts de fidélité.
+EtaComp détermine automatiquement la classe de précision du comparateur testé d'après les limites d'usures imposées par la NFE 11-200.
+Lors de la saisie des données dans le panneau des caractéristiques d'un contrôle, utiliser la touche "Tabulation" pour passer d'un champ à un autre.
+EtaComp est compatible avec le "Copier/Coller" de Windows.
+EtaComp mémorise le nom de l'opérateur et la marque du comparateur testé pour accélérer les grandes séries de contrôle effectuées par la même personne.
+EtaComp permet de modifier des mesures sans recommencer le contrôle d'un comparateur depuis le début.
+Pour modifier une valeur dans une grille de mesure, cliquer sur la cellule correspondante et presser le bouton poussoir du comparateur numérique.

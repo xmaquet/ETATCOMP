@@ -1,0 +1,127 @@
+<HTML><!-- #BeginTemplate "/Templates/EtaComp.dwt" -->
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+<DIV ALIGN="CENTER"> 
+  <TABLE WIDTH="763" BORDER="0" BACKGROUND="Images/Band.gif">
+    <TR>
+      <TD WIDTH="114">&nbsp;</TD>
+      <TD WIDTH="639"><B><FONT COLOR="#FFFFFF">EtaComp - Etalonnage de comparateurs</FONT></B></TD>
+    </TR>
+  </TABLE>
+  <HR>
+</DIV>
+  
+<!-- #BeginEditable "BODY" --> 
+<H1 ALIGN="CENTER"><U>Options du programme</U></H1>
+<H1 ALIGN="CENTER"><IMG SRC="Images/Options.gif" WIDTH="100" HEIGHT="100"></H1>
+<P ALIGN="LEFT">Cette page d&eacute;crit les fonctionnalit&eacute;s propos&eacute;es 
+  par le fen&ecirc;tre de param&eacute;trage des options du programme. La fen&ecirc;tre 
+  des options est constitu&eacute;e de 4 onglets.</P>
+<H2 ALIGN="LEFT">Param&eacute;trage g&eacute;n&eacute;ral:</H2>
+<P ALIGN="CENTER"><IMG SRC="Images/FrmOptionsTab1.jpg" WIDTH="378" HEIGHT="347"> 
+</P>
+<DIV ALIGN="LEFT"> 
+  <UL>
+    <LI> <B><U>Emettre un beep apr&egrave;s chaque mesure</U></B>:<BR>
+      Lorsque cette option est activ&eacute;e, l'ordinateur &eacute;met un &quot;beep&quot; 
+      apr&egrave;s chaque pression sur le bouton poussoir du comparateur num&eacute;rique.<BR>
+      Cette option permet d'&eacute;viter &agrave; l'op&eacute;rateur de regarder 
+      l'&eacute;cran de l'ordinateur apr&egrave;s chaque mesure pour v&eacute;rifier 
+      que celle-ci a effectivement &eacute;t&eacute; prise en compte par le programme.</LI>
+    <LI> <U><B>Demander confirmation avant d'arr&ecirc;ter le programme</B></U>:<BR>
+      L'activation de cette option permet d'afficher une bo&icirc;te de dialogue 
+      demandant confirmation avant d'arr&ecirc;ter le programme.</LI>
+    <LI><U><B>Afficher les astuces du jour au d&eacute;marrage</B></U>:<BR>
+      L'activation de cette option permet d'afficher une fen&ecirc;tre pr&eacute;sentant 
+      des informations et des conseils d'utilisation &agrave; propos du logiciel.<BR>
+      Pour afficher les astuces en cours d'utilisation, s&eacute;lectionner le 
+      sous-menu &quot;<U><B>Astuces du jour</B></U>&quot; du menu &quot;<B><U>?</U></B>&quot; 
+      de la fen&ecirc;tre principale. </LI>
+  </UL>
+</DIV>
+<H2 ALIGN="LEFT">Param&eacute;trage de la communication:</H2>
+<P ALIGN="CENTER"><IMG SRC="Images/FrmOptionsTab2.jpg" WIDTH="378" HEIGHT="347"></P>
+<P ALIGN="LEFT">Par d&eacute;faut, le param&eacute;trage de la liaison s&eacute;rie 
+  RS232 est adapt&eacute;e au fonctionnement du comparateur num&eacute;rique utilis&eacute; 
+  avec le banc de mesure.<BR>
+  La possibilit&eacute; de modifier le port utilis&eacute; et les param&egrave;tres 
+  de transmission est cependant propos&eacute;e &agrave; l'utilisateur afin de 
+  s'adapter &agrave; l'&eacute;ventuel achat d'un nouvel appareil de mesure.</P>
+<P ALIGN="LEFT">Seuls les utilisateurs avertis devraient modifier les param&egrave;tres 
+  de communication de l'application. Le choix des param&egrave;tres &agrave; adopter 
+  doit inp&eacute;rativement se r&eacute;f&eacute;rer &agrave; la documentation 
+  technique du mat&eacute;riel &eacute;dit&eacute;e par le constructeur.</P>
+<P ALIGN="LEFT"> 
+<DIV ALIGN="LEFT"> 
+  <UL>
+    <LI> La liste d&eacute;roulante <U><B> &quot;Port s&eacute;rie&quot;</B></U> 
+      permet de s&eacute;lectionner le port utilis&eacute; pour relier le comparateur 
+      &agrave; l'ordinateur.<BR>
+      Concr&egrave;tement, ce param&egrave;tre se mat&eacute;rialise par une broche 
+      &agrave; 9 points situ&eacute;e &agrave; l'arri&egrave;re de l'unit&eacute; 
+      centrale de l'ordinateur.</LI>
+    <LI> La liste d&eacute;roulante <U><B>&quot;Vitesse de transmission&quot;</B></U> 
+      permet de synchroniser l'ordinateur avec le flux de donn&eacute;es envoy&eacute; 
+      par le comparateur num&eacute;rique.<BR>
+      Si la valeur choisie n'est pas compatible avec le comparateur num&eacute;rique, 
+      EtaComp peut ne plus &ecirc;tre capable de d&eacute;coder les flux de donn&eacute;es 
+      &eacute;mis.</LI>
+    <LI> La liste d&eacute;roulante <B><U>&quot;Valeur de parit&eacute;&quot;</U></B> 
+      permet de fixer le type de contr&ocirc;le d'erreur logiciel &agrave; appliquer 
+      sur les paquets de donn&eacute;es re&ccedil;us.</LI>
+    <LI> La liste d&eacute;roulante <U><B>&quot;Bits de donn&eacute;es valides&quot;</B></U> 
+      fixe le nombre de bits par paquet de donn&eacute;es utilis&eacute;s pour 
+      coder les donn&eacute;es effectives.</LI>
+    <LI> La liste d&eacute;roulante <U><B>&quot;Bits d'arr&ecirc;t&quot;</B></U> 
+      permet de fixer le nombre de bits de fin de paquet de donn&eacute;es.</LI>
+    <LI> Le bouton <U><B>&quot;Appliquer les param&egrave;tres maintenant&quot;</B></U> 
+      permet de tester les valeurs choisies.<BR>
+      EtaComp indique alors si l'ouverture du port s&eacute;rie avec les nouveaux 
+      param&egrave;tres est possible, sans pour autant garantir que les donn&eacute;es 
+      re&ccedil;ues seront exploitables. Si une erreur survient, EtaComp r&eacute;tablie 
+      les derniers param&egrave;tres valides utilis&eacute;s pour ouvrir le port 
+      s&eacute;rie. </LI>
+  </UL>
+</DIV>
+<H2 ALIGN="LEFT">Param&eacute;trage des donn&eacute;es fixes imprim&eacute;es 
+  dans les proc&egrave;s verbaux:</H2>
+<P ALIGN="LEFT">L'&eacute;dition d'un proc&egrave;s verbal comporte quelques champs 
+  fixes dont le contenu est toujours le m&ecirc;me. EtaComp permet d'enregistrer 
+  des valeurs par d&eacute;faut pour ce type de champ et les utilise de mani&egrave;re 
+  automatique lors de l'&eacute;dition d'un proc&egrave;s verbal.</P>
+<P ALIGN="CENTER"><IMG SRC="Images/FrmOptionsTab3.jpg" WIDTH="378" HEIGHT="347"></P>
+<P ALIGN="LEFT">Ci-dessous, la correspondance avec les valeurs enregistr&eacute;es 
+  et la position qu'elles occupent au sein du proc&egrave;s verbal.</P>
+<P ALIGN="CENTER"><IMG SRC="Images/Print_Header.jpg" WIDTH="805" HEIGHT="208"></P>
+<H2 ALIGN="LEFT"><A NAME="Margin"></A>Param&eacute;trage de la mise en page des 
+  &eacute;ditions:</H2>
+<P ALIGN="CENTER"><IMG SRC="Images/FrmOptionsTab4.jpg" WIDTH="378" HEIGHT="347"></P>
+<P ALIGN="LEFT">Le nombre de polices de caract&egrave;res disponibles sur un ordinateur 
+  est variable et fonction des diff&eacute;rents logiciels install&eacute;s.<BR>
+  EtaComp permet de choisir la police utilis&eacute;e lors de l'&eacute;dition 
+  d'un proc&egrave;s verbal ou lors de la visualisation de l'aper&ccedil;u avant 
+  impression.</P>
+<P ALIGN="LEFT"> 
+<DIV ALIGN="LEFT"> 
+  <UL>
+    <LI>La zone de liste &quot;<B><U>Police</U></B>&quot; permet de s&eacute;lectionner 
+      la police &agrave; utiliser.</LI>
+  </UL>
+</DIV>
+<DIV ALIGN="LEFT"> 
+  <UL>
+    <LI>Le curseur &quot;<U><B>Marge horizontale</B></U>&quot; permet de param&eacute;trer 
+      une valeur de retrait &agrave; gauche et &agrave; droite &agrave; appliquer 
+      lors des impressions.<BR>
+      Cette fonctionnalit&eacute; a &eacute;t&eacute; d&eacute;velopp&eacute;e 
+      afin de permettre le stockage des proc&egrave;s verbaux dans un classeur 
+      sans perdre d'information &agrave; l'endroit o&ugrave; sont cr&eacute;&eacute;s 
+      les trous de perforation dans la feuille.</LI>
+  </UL>
+</DIV>
+<!-- #EndEditable --> 
+</BODY>
+<!-- #EndTemplate --></HTML>

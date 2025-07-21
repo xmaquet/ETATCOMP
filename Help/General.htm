@@ -1,0 +1,143 @@
+<HTML><!-- #BeginTemplate "/Templates/EtaComp.dwt" -->
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+<DIV ALIGN="CENTER"> 
+  <TABLE WIDTH="763" BORDER="0" BACKGROUND="Images/Band.gif">
+    <TR>
+      <TD WIDTH="114">&nbsp;</TD>
+      <TD WIDTH="639"><B><FONT COLOR="#FFFFFF">EtaComp - Etalonnage de comparateurs</FONT></B></TD>
+    </TR>
+  </TABLE>
+  <HR>
+</DIV>
+  
+<!-- #BeginEditable "BODY" --> 
+<H1 ALIGN="CENTER"><U>Pr&eacute;sentation g&eacute;n&eacute;rale du programme</U></H1>
+<H1 ALIGN="CENTER"><IMG SRC="Images/Ordinateur.gif" WIDTH="100" HEIGHT="88"></H1>
+<P ALIGN="LEFT"><B>EtaComp</B> est un logiciel permettant d'assister un op&eacute;rateur 
+  lors de l'&eacute;valuation d'un comparateur m&eacute;canique pour d&eacute;terminer 
+  s'il est encore assez fiable pour &ecirc;tre utilis&eacute; ou s'il doit être 
+  rebuté.</P>
+<P ALIGN="LEFT">Le test d'un comparateur m&eacute;canique n&eacute;cessite l'utilisation 
+  d'un autre comparateur, plus pr&eacute;cis, qu'il est possible de connecter 
+  &agrave; un ordinateur afin d'en r&eacute;cup&eacute;rer les mesures.</P>
+<P ALIGN="LEFT"><B>EtaComp</B> assure la gestion de toutes les mesures du comparateur 
+  de pr&eacute;cision envoy&eacute;es vers l'ordinateur.</P>
+<P ALIGN="LEFT">Le tableau ci-dessous r&eacute;sume les principales caract&eacute;ristiques 
+  de l'application.</P>
+<DIV ALIGN="CENTER"> 
+  <TABLE BORDER="1">
+    <TR> 
+      <TD BGCOLOR="#669933">Conformit&eacute; avec la proc&eacute;dure officielle</TD>
+      <TD BGCOLOR="#669933">Oui</TD>
+    </TR>
+    <TR> 
+      <TD BGCOLOR="#CC9933">D&eacute;tection automatique du d&eacute;but d'un 
+        contr&ocirc;le </TD>
+      <TD BGCOLOR="#CC9933">Oui</TD>
+    </TR>
+    <TR> 
+      <TD BGCOLOR="#CC9933">Enchaînement automatique des phases d'un contr&ocirc;le</TD>
+      <TD BGCOLOR="#CC9933">Oui</TD>
+    </TR>
+    <TR> 
+      <TD BGCOLOR="#CC9933">D&eacute;tection automatique de la fin d'un contr&ocirc;le</TD>
+      <TD BGCOLOR="#CC9933">Oui</TD>
+    </TR>
+    <TR> 
+      <TD BGCOLOR="#CC9933">Utilisation de l'ordinateur avant un contr&ocirc;le</TD>
+      <TD BGCOLOR="#CC9933">R&eacute;duite</TD>
+    </TR>
+    <TR> 
+      <TD BGCOLOR="#CC9933">Utilisation de l'ordinateur en cours de contr&ocirc;le</TD>
+      <TD BGCOLOR="#CC9933">Non</TD>
+    </TR>
+    <TR> 
+      <TD BGCOLOR="#CC9933">Utilisation de l'ordinateur en fin de contr&ocirc;le</TD>
+      <TD BGCOLOR="#CC9933">R&eacute;duite ou nulle</TD>
+    </TR>
+    <TR> 
+      <TD BGCOLOR="#CC9933">Obligation de regarder l'&eacute;cran de l'ordinateur 
+        durant un contr&ocirc;le </TD>
+      <TD BGCOLOR="#CC9933">Non</TD>
+    </TR>
+    <TR> 
+      <TD BGCOLOR="#669933">Prise en charge de la phase des s&eacute;ries de mesures</TD>
+      <TD BGCOLOR="#669933">Oui</TD>
+    </TR>
+    <TR> 
+      <TD BGCOLOR="#669933">Nombre de s&eacute;ries de mesures</TD>
+      <TD BGCOLOR="#669933">de 2 &agrave; 64 (5 par d&eacute;faut)</TD>
+    </TR>
+    <TR> 
+      <TD BGCOLOR="#669933">Nombre de mesures par s&eacute;rie</TD>
+      <TD BGCOLOR="#669933">de 4 &agrave; 128 (12 valeurs pr&eacute;d&eacute;finies 
+        par d&eacute;faut)</TD>
+    </TR>
+    <TR BGCOLOR="#669933"> 
+      <TD>Possibilit&eacute; de modification des mesures enregistr&eacute;es</TD>
+      <TD>Oui</TD>
+    </TR>
+    <TR BGCOLOR="#669933"> 
+      <TD>Proposition automatique des points de relev&eacute; des &eacute;carts 
+        de fid&eacute;lit&eacute;</TD>
+      <TD>Oui</TD>
+    </TR>
+    <TR BGCOLOR="#CC9933"> 
+      <TD>Tra&ccedil;age de la courbe d'&eacute;talonnage</TD>
+      <TD>Oui</TD>
+    </TR>
+    <TR BGCOLOR="#669933"> 
+      <TD>Prise en charge de la phase du relev&eacute; des &eacute;carts de fid&eacute;lit&eacute;</TD>
+      <TD>Oui</TD>
+    </TR>
+    <TR BGCOLOR="#669933"> 
+      <TD BGCOLOR="#669933">Nombre de mesures par point de relev&eacute;</TD>
+      <TD>de 2 &agrave; 128 (10 par d&eacute;faut)</TD>
+    </TR>
+    <TR BGCOLOR="#669933"> 
+      <TD>Possibilit&eacute; de modification des mesures enregistr&eacute;es</TD>
+      <TD BGCOLOR="#669933">Oui</TD>
+    </TR>
+    <TR BGCOLOR="#CC9933"> 
+      <TD BGCOLOR="#CC9933">Calcul automatique de la classe de pr&eacute;cision 
+        (d'apr&egrave;s NFE 11-200)</TD>
+      <TD>Oui</TD>
+    </TR>
+    <TR BGCOLOR="#CC9933"> 
+      <TD>Possibilit&eacute; de modifier manuellement la classe de pr&eacute;cision 
+        calcul&eacute;e </TD>
+      <TD>Oui</TD>
+    </TR>
+    <TR BGCOLOR="#669933"> 
+      <TD>Edition du proc&egrave;s verbal de contr&ocirc;le</TD>
+      <TD>Oui</TD>
+    </TR>
+    <TR BGCOLOR="#669933"> 
+      <TD>Contr&ocirc;le du rendu &agrave; l'&eacute;dition</TD>
+      <TD>Oui</TD>
+    </TR>
+    <TR BGCOLOR="#669933"> 
+      <TD>Param&eacute;trage des informations &eacute;dit&eacute;es</TD>
+      <TD>Oui</TD>
+    </TR>
+    <TR BGCOLOR="#CC9933"> 
+      <TD>Param&eacute;trage du port s&eacute;rie RS232</TD>
+      <TD>Oui</TD>
+    </TR>
+    <TR BGCOLOR="#669933"> 
+      <TD>Aide en ligne</TD>
+      <TD>Oui</TD>
+    </TR>
+    <TR BGCOLOR="#CC9933"> 
+      <TD>Programme d'installation</TD>
+      <TD>Oui</TD>
+    </TR>
+  </TABLE>
+</DIV>
+<!-- #EndEditable --> 
+</BODY>
+<!-- #EndTemplate --></HTML>

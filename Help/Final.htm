@@ -1,0 +1,428 @@
+<HTML><!-- #BeginTemplate "/Templates/EtaComp.dwt" -->
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+<DIV ALIGN="CENTER"> 
+  <TABLE WIDTH="763" BORDER="0" BACKGROUND="Images/Band.gif">
+    <TR>
+      <TD WIDTH="114">&nbsp;</TD>
+      <TD WIDTH="639"><B><FONT COLOR="#FFFFFF">EtaComp - Etalonnage de comparateurs</FONT></B></TD>
+    </TR>
+  </TABLE>
+  <HR>
+</DIV>
+  
+<!-- #BeginEditable "BODY" --> 
+<H1 ALIGN="CENTER"><U>Finalisation d'un contr&ocirc;le de comparateur</U></H1>
+<H1 ALIGN="CENTER"><IMG SRC="Images/Final.gif" WIDTH="150" HEIGHT="137"></H1>
+<P>Cette page d&eacute;crit la proc&eacute;dure &agrave; suivre lorsque les phases 
+  du contr&ocirc;le du comparateur sont termin&eacute;es.</P>
+<P><B>Cette &eacute;tape intervient lorsque</B>:</P>
+<OL>
+  <LI>La phase des s&eacute;ries de mesures est termin&eacute;e.</LI>
+  <LI>La phase du relev&eacute; des &eacute;carts de fid&eacute;lit&eacute; est 
+    termin&eacute;e et les mesures sont valid&eacute;es.</LI>
+</OL>
+<P><B>Cette &eacute;tape permet</B>:</P>
+<OL>
+  <LI>Le calcul de la classe de pr&eacute;cision du comparateur.</LI>
+  <LI>L'acc&egrave;s aux fonctionnalit&eacute;s d'impression du proc&egrave;s 
+    verbal.<BR>
+    Voir aussi: <A HREF="Print.htm" TARGET="Right">Edition d'un proc&egrave;s 
+    verbal de contr&ocirc;le</A></LI>
+</OL>
+<P>La <B>classe de pr&eacute;cision</B> d'un comparateur est calcul&eacute;e sur 
+  la base de limites &agrave; ne pas d&eacute;passer pour au moins l'une des valeurs 
+  suivantes:</P>
+<OL>
+  <LI>La valeur de justesse totale</LI>
+  <LI>La valeur de justesse locale</LI>
+  <LI>La valeur de l'&eacute;cart de fid&eacute;lit&eacute;</LI>
+  <LI>La valeur de l'erreur d'Hyst&eacute;r&eacute;sis</LI>
+</OL>
+<P>La classe 0 correspond &agrave; une pr&eacute;cision plus importante que la 
+  classe 1.<BR>
+  Un comparateur dont l'une des valeurs d'erreur d&eacute;passe celle de la classe 
+  1 correspondante est &quot;<U><B>A REBUTER</B></U>&quot;.</P>
+<P ALIGN="LEFT">Les valeurs de la classe 0 et de la classe 1 sont variables selon 
+  l'&eacute;chelon du comparateur (valeur d'une graduation) et sa course.<BR>
+  Les valeurs actuellement prise en compte par EtaComp d'apr&egrave;s la <B>NFE 
+  11-200</B> sont:</P>
+<DIV ALIGN="CENTER"> 
+  <TABLE BORDER="1">
+    <TR VALIGN="MIDDLE"> 
+      <TD ROWSPAN="2" WIDTH="185"> 
+        <P ALIGN="CENTER"><B>Valeurs de l'&eacute;chelon en mm</B></P>
+      </TD>
+      <TD ROWSPAN="2" VALIGN="MIDDLE" WIDTH="98"> 
+        <DIV ALIGN="CENTER"><B>Course en mm</B></DIV>
+      </TD>
+      <TD ROWSPAN="2" WIDTH="55"> 
+        <DIV ALIGN="CENTER"><B>Classes</B></DIV>
+      </TD>
+      <TD COLSPAN="4"> 
+        <DIV ALIGN="CENTER"><B>Limites d'usure en µm</B></DIV>
+      </TD>
+    </TR>
+    <TR> 
+      <TD WIDTH="105"> 
+        <DIV ALIGN="CENTER"><B>Justesse totale</B></DIV>
+      </TD>
+      <TD WIDTH="105"> 
+        <DIV ALIGN="CENTER"><B>Justesse locale</B></DIV>
+      </TD>
+      <TD WIDTH="105"> 
+        <DIV ALIGN="CENTER"><B>Fid&eacute;lit&eacute;</B></DIV>
+      </TD>
+      <TD WIDTH="105"> 
+        <DIV ALIGN="CENTER"><B>Hyst&eacute;r&eacute;sis</B></DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD ROWSPAN="4" WIDTH="183"> 
+        <DIV ALIGN="CENTER"><B>0.001</B></DIV>
+      </TD>
+      <TD ROWSPAN="2" WIDTH="96"> 
+        <DIV ALIGN="CENTER">Jusqu'&agrave; 1</DIV>
+      </TD>
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>0</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">5</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">3</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±0.5</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±1</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>1</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">7</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">4</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±0.7</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±1.5</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD ROWSPAN="2" WIDTH="96"> 
+        <DIV ALIGN="CENTER">Jusqu'&agrave; 5</DIV>
+      </TD>
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>0</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">10</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">3</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±0.5</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±1</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>1</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">15</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">4</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±0.7</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±1.5</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD ROWSPAN="10" WIDTH="183"> 
+        <DIV ALIGN="CENTER"><B>0.01</B></DIV>
+      </TD>
+      <TD ROWSPAN="2" WIDTH="96"> 
+        <DIV ALIGN="CENTER">Jusqu'&agrave; 5</DIV>
+      </TD>
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>0</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">15</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">10</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±3</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±3</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>1</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">22</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">15</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±4</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">4±</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD ROWSPAN="2" WIDTH="96"> 
+        <DIV ALIGN="CENTER">Jusqu'&agrave; 10</DIV>
+      </TD>
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>0</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">15</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">10</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±5</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±5</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>1</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">22</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">15</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±7</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±7</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD ROWSPAN="2" WIDTH="96"> 
+        <DIV ALIGN="CENTER">Jusqu'&agrave; 30</DIV>
+      </TD>
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>0</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">20</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">10</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±10</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±5</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>1</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">30</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">15</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±15</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±7</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD ROWSPAN="2" WIDTH="96"> 
+        <DIV ALIGN="CENTER">Jusqu'&agrave; 50</DIV>
+      </TD>
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>0</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">25</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">10</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±10</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±5</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>1</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">37</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">15</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±15</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±7</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD ROWSPAN="2" WIDTH="96"> 
+        <DIV ALIGN="CENTER">Jusqu'&agrave; 100</DIV>
+      </TD>
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>0</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">30</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">15</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±10</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±10</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>1</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">45</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">22</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±15</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±15</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD ROWSPAN="2" WIDTH="183"> 
+        <DIV ALIGN="CENTER"><B>0.1</B></DIV>
+      </TD>
+      <TD ROWSPAN="2" WIDTH="96"> 
+        <DIV ALIGN="CENTER">Jusqu'&agrave; 30</DIV>
+      </TD>
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>0</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">150</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">100</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±30</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±30</DIV>
+      </TD>
+    </TR>
+    <TR VALIGN="MIDDLE"> 
+      <TD WIDTH="52"> 
+        <DIV ALIGN="CENTER"><B>1</B></DIV>
+      </TD>
+      <TD WIDTH="117"> 
+        <DIV ALIGN="CENTER">220</DIV>
+      </TD>
+      <TD WIDTH="100"> 
+        <DIV ALIGN="CENTER">150</DIV>
+      </TD>
+      <TD WIDTH="57"> 
+        <DIV ALIGN="CENTER">±45</DIV>
+      </TD>
+      <TD WIDTH="72"> 
+        <DIV ALIGN="CENTER">±45</DIV>
+      </TD>
+    </TR>
+  </TABLE>
+  <P>&nbsp;</P>
+  <P><IMG SRC="Images/FrmGenFinal.jpg" WIDTH="713" HEIGHT="451"></P>
+</DIV>
+<P ALIGN="LEFT">Sur l'interface graphique, la grille de donn&eacute;es des &quot;<B><U>Limites 
+  d'usure (µm) d'apr&egrave;s NFE 11-200</U></B>&quot; affiche les valeurs &agrave; 
+  ne pas d&eacute;passer pour la classe 0, la classe 1 et les valeurs obtenues 
+  &agrave; partir des mesures effectu&eacute;es lors du contr&ocirc;le du comparateur.</P>
+<P ALIGN="LEFT"></P>
+<P><IMG SRC="Images/Puce1.gif" WIDTH="21" HEIGHT="21"><U><B>Pour affecter la valeur 
+  de l'&eacute;chelon du comparateur</B></U>:</P>
+<P>S&eacute;lectionner la valeur de l'&eacute;chelon dans la liste d&eacute;roulante 
+  &quot;<U><B>Valeur de l'&eacute;chelon (mm)</B></U>&quot;.</P>
+<P><IMG SRC="Images/Puce1.gif" WIDTH="21" HEIGHT="21"><U><B>Pour affecter la valeur 
+  de course du comparateur</B></U>:</P>
+<P>S&eacute;lectionner la valeur de course dans la liste d&eacute;roulante &quot;<B><U>Course 
+  (mm)</U></B>&quot;.</P>
+<P><IMG SRC="Images/Puce1.gif" WIDTH="21" HEIGHT="21"><U><B>Calcul de la classe 
+  de pr&eacute;cision</B></U>:</P>
+<P>EtaComp calcule automatiquement la classe de pr&eacute;cision du comparateur 
+  en fonction des valeurs d'&eacute;chelon et de course s&eacute;lectionn&eacute;es 
+  dans les listes d&eacute;roulantes.<BR>
+  La zone &quot;<U><B>R&eacute;sultat</B></U>&quot; affiche le r&eacute;sultat 
+  obtenu pour chacune des valeurs d'erreur et le r&eacute;sultat final du contr&ocirc;le.</P>
+<P><IMG SRC="Images/Puce1.gif" WIDTH="21" HEIGHT="21"><B><U>Pour modifier le r&eacute;sultat 
+  calcul&eacute; automatiquement par EtaComp</U></B>:</P>
+<P>Pour des raisons diverses, l'op&eacute;rateur peut &ecirc;tre amen&eacute; 
+  &agrave; vouloir modifier le r&eacute;sultat du contr&ocirc;le calcul&eacute; 
+  automatiquement par EtaComp.<BR>
+  Pour modifier le r&eacute;sultat du contr&ocirc;le, cliquer sur le bouton &quot;<U><B>Modifier</B></U>&quot; 
+  situ&eacute; &agrave; droite de la zone affichant le r&eacute;sultat g&eacute;n&eacute;ral.<BR>
+  La fen&ecirc;tre suivante appara&icirc;t:</P>
+<P ALIGN="CENTER"><IMG SRC="Images/FrmEnd.jpg" WIDTH="261" HEIGHT="164"></P>
+<P ALIGN="LEFT">S&eacute;lectionner alors la valeur souha&icirc;t&eacute;e et 
+  cliquer sur le bouton &quot;<B><U>Valider</U></B>&quot;. EtaComp prend en compte 
+  la nouvelle valeur de r&eacute;sultat du contr&ocirc;le.</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<!-- #EndEditable --> 
+</BODY>
+<!-- #EndTemplate --></HTML>
